@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 2px grey;
+}
+
+
+.logo {
+    margin-left: 10px;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.headerserect {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.items {
+    display: flex;
+    text-decoration: underline;
+}
+
+.items li {
+    margin-right: 30px;
+}
+
+.headerserect img {
+    width: 30px;
+    height: 30px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.headerserect img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.line {
+    width: 25px;
+    height: 25px;
+}
+
+.serchicon {
+    width: 30px;
+    height: 30px;
+}
+
+.phot {
+    display: flex;
+    margin-top: 0;
+
+}
+
+.img1 {
+    width: 50%;
+    height: 500px;
+    cursor: pointer;
+
+}
+
+.img2 {
+    width: 50%;
+    height: 500px;
+    cursor: pointer;
+}
+
+.img3 {
+    width: 800px;
+    height: 400px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+
+main div {
+    margin-top: 50px;
+}
+
+.center {
+    margin-top: 0;
+    text-align: center;
+    color: dimgrey;
+    height: 60px;
+    line-height: 60px;
+    background-color: #EEEEEE;
+    margin-bottom: 0px;
+    letter-spacing: 0.1em;
+}
+
+.headernav {
+    margin-left: 30px;
+
+}
+
+.maincontent {
+    margin: 0;
+    text-align: center;
+
+}
+
+div .text1 {
+    margin-top: -10px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+div .text1-1 {
+    margin-top: -30px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+
+div .text2 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+div .bar {
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    border-radius: 24px;
+    cursor: pointer;
+
+}
+
+footer {
+    color: white;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    margin-top: 40px;
+
+
+
+}
+
+.footmenu {
+    display: flex;
+}
+
+li {
+    cursor: pointer;
+}
+
+.footer1 {
+    margin-right: 20px;
+}
+
+.footertop {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footsns {
+
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.footsns img {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 24px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+nav {
+    width: 200px;
+    height: 800px;
+    display: flex;
+    position: absolute;
+    left: -200px;
+    top: 8px;
+    margin-left: auto;
+    flex-direction: column;
+    transition: all 0.2s;
+    background-color: white;
+
+
+}
+
+.facebook {
+    margin-top: 20px;
+}
+
+.twitter {
+    margin-top: 20px;
+}
+
+.sidefooter {
+    text-align: center;
+    margin-top: auto;
+}
+
+.navtext2 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navtext3 {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    border-radius: 24px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.navlist {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    width: 100%;
+    line-height: 60px;
+    letter-spacing: 2px;
+}
+
+
+.serect {
+    border-bottom: solid 2px black;
+    cursor: pointer;
+}
+
+.serect:hover {
+    border-bottom: solid 2px black;
+    background-color: grey;
+
+}
+
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -50vh;
+}
+
+input[type="checkbox"]:checked~nav {
+    position: absolute;
+    top: 0px;
+
+    left: 0;
+}
+
+input[type="checkbox"]:checked~.footer2 {
+    left: -50px;
+}
+
+input[type="checkbox"]:checked~.back {
+    position: absolute;
+    width: 100%;
+    height: 1800px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(12px);
+}
+
+@media screen and (max-width: 830px) {
+
+    .items {
+        position: absolute;
+        left: -400px;
+    }
+    .img1 {
+
+        height: 100%;
+    }
+
+    .img2 {
+        height: 100%;
+    }
+
+    .img3 {
+        width: 80%;
+        height: 80%;
+    }
+    footer {
+        height: 150px;
+    }
+
+
+
+    .footsns img {
+        width: 30px;
+        height: 30px;
+    }
+    .facebook {
+        margin-top: 10px;
+    }
+
+    .twitter {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footsns {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+    }
+    .fontsns img {
+        margin-right: 0;
+    }
+}
